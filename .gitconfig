@@ -1,0 +1,13 @@
+[user]
+    email = ericwellsrobotics@gmail.com
+    name = eric.wells
+
+[alias]
+    st = status -sb
+    lg = !git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30
+    cm = commit -m
+    co = checkout
+    cob = checkout -b
+    br = branch --all --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+    graph = log --all --decorate --oneline --graph
+
